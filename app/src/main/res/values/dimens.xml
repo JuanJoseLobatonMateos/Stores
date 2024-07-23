@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_card_height">200dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="card_img_cover_height">160dp</dimen>
+    <dimen name="common_padding_middle">24dp</dimen>
+    <dimen name="card_img_size">40dp</dimen>
+    <dimen name="card_height">56dp</dimen>
+    <dimen name="actionBar_padding_top">150dp</dimen>
+    <dimen name="common_padding_start">55dp</dimen>
+    <dimen name="size_img_thumb">88dp</dimen>
+</resources>
