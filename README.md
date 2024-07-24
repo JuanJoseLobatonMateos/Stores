@@ -6,9 +6,9 @@ Este proyecto es una aplicación Android desarrollada en Kotlin, que permite a l
 
 Para instalar y ejecutar este proyecto en tu entorno local, sigue estos pasos:
 
-###bash
-###git clone https://github.com/JuanJoseLobatonMateos/stores-app.git
-###cd stores-app
+```bash
+git clone https://github.com/JuanJoseLobatonMateos/stores-app.git
+cd stores-app
 
 Asegúrate de tener Android Studio Koala | 2024.1.1 Patch 1 instalado para abrir el proyecto.
 
