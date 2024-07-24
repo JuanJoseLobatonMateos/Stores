@@ -1,8 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Stores" parent="Theme.Material3.DynamicColors.DayNight">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.Stores" parent="Theme.MaterialComponents.Light">
+        <!-- Primary Brand Colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Brand Colors -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status Bar color-->
+        <item name="android:statusBarColor" tools:targetApi="34">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme.Stores" parent="Base.Theme.Stores" />

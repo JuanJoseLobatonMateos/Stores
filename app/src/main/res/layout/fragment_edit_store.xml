@@ -86,18 +86,20 @@
              android:layout_height="wrap_content"
              android:layout_weight="1"
              android:hint="@string/hint_photo_url"
+             app:helperText="@string/helper_required"
              app:endIconMode="clear_text"
              app:startIconDrawable="@drawable/ic_link"
              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
              <com.google.android.material.textfield.TextInputEditText
                  android:id="@+id/etPhotoUrl"
-                 android:inputType="textMultiLine"
-                 android:minLines="@integer/lines_url_photo"
-                 android:maxLines="@integer/lines_url_photo"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
+                 android:inputType="textMultiLine"
+                 android:maxLines="@integer/lines_url_photo"
+                 android:minLines="@integer/lines_url_photo"
                  android:textAppearance="?attr/textAppearanceCaption"
-                 android:textColor="@color/color_link"/>
+                 android:textColor="@color/color_link" />
          </com.google.android.material.textfield.TextInputLayout>
          <ImageView
              android:id="@+id/imgPhoto"

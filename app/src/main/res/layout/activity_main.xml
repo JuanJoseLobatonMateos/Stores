@@ -12,6 +12,8 @@
         android:id="@+id/rvStores"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:paddingBottom="@dimen/common_padding_min"
+        android:clipToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/common_padding_default"
         android:src="@drawable/ic_add_shop"
+        android:background="@color/secondaryDarkColor"
         android:contentDescription="@string/description_store_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

@@ -10,4 +10,5 @@
     <dimen name="actionBar_padding_top">150dp</dimen>
     <dimen name="common_padding_start">55dp</dimen>
     <dimen name="size_img_thumb">88dp</dimen>
+    <dimen name="grid_spacing">0.5dp</dimen>
 </resources>

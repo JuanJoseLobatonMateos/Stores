@@ -1,19 +1,26 @@
 package com.jlobatonm.stores
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.jlobatonm.stores.databinding.ActivityMainBinding
 import java.util.concurrent.LinkedBlockingQueue
+import android.Manifest.permission.CALL_PHONE
 
 class MainActivity : AppCompatActivity() , OnClickListener, MainAux
 {
+    companion object {
+        private const val REQUEST_CALL_PHONE = 1
+    }
     private lateinit var mBinding: ActivityMainBinding
     private lateinit var mAdapter: StoreAdapter
     private lateinit var mGridLayout: GridLayoutManager
@@ -26,7 +33,7 @@ class MainActivity : AppCompatActivity() , OnClickListener, MainAux
         setContentView(mBinding.root)
         ViewCompat.setOnApplyWindowInsetsListener(mBinding.containerMain) { view , insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            // Adjust only the top padding, keep other paddings as they are
+            view.setBackgroundColor(ContextCompat.getColor(this , R.color.primaryDarkColor))
             view.setPadding(
                 view.paddingLeft ,
                 systemBars.top ,
@@ -58,8 +65,10 @@ class MainActivity : AppCompatActivity() , OnClickListener, MainAux
     
     private fun setupRecycledView()
     {
+        val spacingInPixels = resources.getDimensionPixelSize(R.dimen.grid_spacing)
+        mBinding.rvStores.addItemDecoration(GridSpacingItemDecoration(2, spacingInPixels, true))
         mAdapter = StoreAdapter(mutableListOf() , this)
-        mGridLayout = GridLayoutManager(this , 2)
+        mGridLayout = GridLayoutManager(this , resources.getInteger(R.integer.main_columns))
         getStores()
         
         mBinding.rvStores.apply {
@@ -106,7 +115,7 @@ class MainActivity : AppCompatActivity() , OnClickListener, MainAux
     
     override fun onDeleteStore(storeEntity: StoreEntity)
     {
-       val items = arrayOf("Eliminar","LLamar","Ir al sitio web")
+       val items = resources.getStringArray(R.array.array_options_item)
         
         MaterialAlertDialogBuilder(this)
             .setTitle(getString(R.string.dialog_options_title))
@@ -123,38 +132,37 @@ class MainActivity : AppCompatActivity() , OnClickListener, MainAux
     
     private fun openWebSite(webSite: String)
     {
-        if (webSite.isEmpty())
-        {
-            Toast.makeText(this, getString(R.string.main_error_no_website), Toast.LENGTH_LONG).show()
-        } else
-        {
-            try
-            {
-                val webSiteIntent = Intent(Intent.ACTION_VIEW).apply {
-                    data = Uri.parse(webSite)
-                }
-                startActivity(intent)
-            } catch (e: Exception)
-            {
-                e.printStackTrace()
-            }
+        
+        val webSiteIntent = Intent(Intent.ACTION_VIEW).apply {
+            data = Uri.parse(webSite)
         }
+        startIntent(webSiteIntent)
     }
     
-    private fun callStore(phone : String)
-    {
-        
-        try
-        {
+    private fun callStore(phone: String) {
+        if (ContextCompat.checkSelfPermission(this , CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            // Solicitar el permiso al usuario
+            ActivityCompat.requestPermissions(this , arrayOf(CALL_PHONE) , REQUEST_CALL_PHONE)
+        } else {
+            // Permiso ya otorgado, realizar la llamada
             val callIntent = Intent(Intent.ACTION_CALL).apply {
                 data = Uri.parse("tel:$phone")
             }
             startActivity(callIntent)
-        } catch (e: Exception)
-        {
-            e.printStackTrace()
         }
     }
+    
+    private fun startIntent(intent: Intent)
+    {
+        if (intent.resolveActivity(packageManager) != null)
+        {
+            startActivity(intent)
+        } else
+        {
+            Toast.makeText(this , getString(R.string.main_error_no_call) , Toast.LENGTH_LONG).show()
+        }
+    }
+    
     
     private fun confirmDialog(storeEntity: StoreEntity)
     {
