@@ -1,6 +1,6 @@
 
 # Store App 
-![Icono de la App](https://github.com/JuanJoseLobatonMateos/Stores/blob/main/app%2Fsrc%2Fmain%2Fres%2Fmipmap-mdpi%2Fic_launcher_round.webp) 
+![Icono de la App](https://github.com/JuanJoseLobatonMateos/Stores/blob/main/app%2Fsrc%2Fmain%2Fres%2Fmipmap-xxhdpi%2Fic_launcher_round.webp) 
 
 Este proyecto es una aplicación Android desarrollada en Kotlin, que permite a los usuarios gestionar una lista de tiendas. Los usuarios pueden añadir, editar, eliminar y marcar tiendas como favoritas. La aplicación utiliza Room para la persistencia de datos, y sigue el patrón de diseño MVVM para su arquitectura.
 
