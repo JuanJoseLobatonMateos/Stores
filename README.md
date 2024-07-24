@@ -14,7 +14,7 @@ Este proyecto es una aplicación Android desarrollada en Kotlin, que permite a l
 
 ## Capturas de Pantalla
 
-<img src="media/Screenshot1.png" width="200" alt="Screenshot 1">        <img src="media/Screenshot2.png" width="200" alt="Screenshot 2">      <img src="media/Screenshot3.png" width="200" alt="Screenshot 3">
+<img src="media/Screenshot1.png" width="200" alt="Screenshot 1">  <span/>      <img src="media/Screenshot2.png" width="200" alt="Screenshot 2">      <img src="media/Screenshot3.png" width="200" alt="Screenshot 3">
 
 ## Tecnologías Utilizadas
 
