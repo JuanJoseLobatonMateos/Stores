@@ -14,7 +14,39 @@ Este proyecto es una aplicación Android desarrollada en Kotlin, que permite a l
 
 ## Capturas de Pantalla
 
-<img src="media/Screenshot1.png" width="200" alt="Screenshot 1">  <span/>      <img src="media/Screenshot2.png" width="200" alt="Screenshot 2">      <img src="media/Screenshot3.png" width="200" alt="Screenshot 3">
+<img src="media/Screenshot1.png" width="200" alt="Screenshot 1"><img src="media/Screenshot2.png" width="200" alt="Screenshot 2"><img src="media/Screenshot3.png" width="200" alt="Screenshot 3">
+
+## Manual de Instrucciones para "Stores App"
+
+### 1. Inicio de la aplicación
+Al abrir "Stores App", serás recibido por la pantalla principal que muestra una lista de tus tiendas guardadas.
+
+### 2. Navegación principal
+La interfaz es intuitiva, con una lista de tiendas y un botón flotante en la esquina inferior derecha para añadir nuevas tiendas.
+
+### 3. Agregar una nueva tienda
+Para añadir una tienda:
+1. Pulsa el botón flotante "+".
+2. Rellena los detalles de la tienda en el formulario.
+3. Guarda la tienda pulsando el icono de guardado.
+
+### 4. Editar una tienda
+Para editar una tienda:
+1. Pulsa sobre la tienda que deseas editar.
+2. Modifica los detalles en el formulario.
+3. Guarda los cambios.
+
+### 5. Eliminar una tienda
+Para eliminar una tienda, mantén presionada la tienda que deseas eliminar y selecciona "Eliminar" en el menú de opciones.
+
+### 6. Marcar una tienda como favorita
+Puedes marcar una tienda como favorita pulsando el icono de corazón en la lista de tiendas.
+
+### 7. Visualizar detalles de la tienda
+Pulsa sobre cualquier tienda en la lista para ver todos sus detalles.
+
+### 8. Soporte y contacto
+Si tienes preguntas o necesitas soporte, por favor contacta a soporte@storesapp.com.
 
 ## Tecnologías Utilizadas
 
