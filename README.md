@@ -45,6 +45,12 @@ Puedes marcar una tienda como favorita pulsando el icono de corazón en la lista
 ### 7. Visualizar detalles de la tienda
 Pulsa sobre cualquier tienda en la lista para ver todos sus detalles.
 
+### 8. Acciones secundarias de las Tiendas
+Manten Pulsado en una tienda para abrir un menu emergente con el que podras:
+1. Llamar a la tienda
+2. Acceder a su pagina web
+3. Eliminar la tienda
+
 ### 8. Soporte y contacto
 Si tienes preguntas o necesitas soporte, por favor contacta a jlobatonm@gmail.com
 
