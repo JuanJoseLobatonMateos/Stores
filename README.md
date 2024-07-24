@@ -2,6 +2,29 @@
 
 Este proyecto es una aplicación Android desarrollada en Kotlin, que permite a los usuarios gestionar una lista de tiendas. Los usuarios pueden añadir, editar, eliminar y marcar tiendas como favoritas. La aplicación utiliza Room para la persistencia de datos, y sigue el patrón de diseño MVVM para su arquitectura.
 
+## Características
+
+- Ver una lista de tiendas.
+- Añadir nuevas tiendas.
+- Editar tiendas existentes.
+- Eliminar tiendas.
+- Marcar tiendas como favoritas.
+- Persistencia de datos con Room.
+- Arquitectura MVVM.
+
+## Capturas de Pantalla
+
+<img src="path_to_screenshot1.png" width="200" alt="Screenshot 1">
+<img src="path_to_screenshot2.png" width="200" alt="Screenshot 2">
+<img src="path_to_screenshot3.png" width="200" alt="Screenshot 3">
+
+## Tecnologías Utilizadas
+
+- **Kotlin**: Lenguaje de programación.
+- **Room**: Persistencia de datos.
+- **MVVM**: Patrón de arquitectura.
+- **Android Studio**: Entorno de desarrollo integrado.
+
 ## Instalación
 
 Para instalar y ejecutar este proyecto en tu entorno local, sigue estos pasos:
@@ -9,22 +32,3 @@ Para instalar y ejecutar este proyecto en tu entorno local, sigue estos pasos:
 ```bash
 git clone https://github.com/JuanJoseLobatonMateos/stores-app.git
 cd stores-app
-```
-
-Asegúrate de tener Android Studio Koala | 2024.1.1 Patch 1 instalado para abrir el proyecto.
-
-##Uso
-
-Una vez instalado, puedes ejecutar la aplicación en un emulador o dispositivo Android. La aplicación te permitirá:
-
--Ver una lista de tiendas.
--Añadir nuevas tiendas.
--Editar tiendas existentes.
--Eliminar tiendas.
--Marcar tiendas como favoritas.
-
-##Contribuir
-Si estás interesado en contribuir a este proyecto, por favor envía un pull request o abre un issue para discutir lo que te gustaría cambiar.
-
-##Licencia
-Este proyecto está licenciado bajo la Licencia MIT - ve el archivo LICENSE para más detalles.
