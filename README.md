@@ -46,7 +46,7 @@ Puedes marcar una tienda como favorita pulsando el icono de corazón en la lista
 Pulsa sobre cualquier tienda en la lista para ver todos sus detalles.
 
 ### 8. Soporte y contacto
-Si tienes preguntas o necesitas soporte, por favor contacta a soporte@storesapp.com.
+Si tienes preguntas o necesitas soporte, por favor contacta a jlobatonm@gmail.com
 
 ## Tecnologías Utilizadas
 
