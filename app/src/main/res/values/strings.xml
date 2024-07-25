@@ -25,4 +25,5 @@
     <string name="dialog_options_title">What do you want to do?</string>
     <string name="main_error_no_website">This store does not have a website</string>
     <string name="main_error_no_call">No compatible app found</string>
+    <string name="main_error_no_whatsapp">WhatsApp no está instalado</string>
 </resources>

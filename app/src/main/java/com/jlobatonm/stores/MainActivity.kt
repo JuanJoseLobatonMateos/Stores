@@ -142,9 +142,8 @@ class MainActivity : AppCompatActivity() , OnClickListener, MainAux
             startActivity(intent)
         } catch (e: ActivityNotFoundException) {
           
-            Toast.makeText(this, "WhatsApp no está instalado", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.main_error_no_whatsapp, Toast.LENGTH_SHORT).show()
         }
-        
     }
     
     
