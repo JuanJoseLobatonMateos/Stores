@@ -15,6 +15,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.jlobatonm.stores.databinding.ActivityMainBinding
 import java.util.concurrent.LinkedBlockingQueue
 import android.Manifest.permission.CALL_PHONE
+import android.content.ActivityNotFoundException
 
 class MainActivity : AppCompatActivity() , OnClickListener, MainAux
 {
@@ -124,11 +125,31 @@ class MainActivity : AppCompatActivity() , OnClickListener, MainAux
                     0 -> confirmDialog(storeEntity)
                     1 -> callStore(storeEntity.phone)
                     2 -> openWebSite(storeEntity.website)
+                    3 -> sendWhatsApp(storeEntity.phone)
                 }
             }
             .show()
         
     }
+    
+    private fun sendWhatsApp(phone: String) {
+       
+        val intent = Intent(Intent.ACTION_VIEW).apply {
+            data = Uri.parse("https://wa.me/$phone")
+        }
+     
+        
+        try {
+            startActivity(intent)
+        } catch (e: ActivityNotFoundException) {
+          
+            Toast.makeText(this, "WhatsApp no está instalado", Toast.LENGTH_SHORT).show()
+        }
+        
+    }
+    
+    
+    
     
     private fun openWebSite(webSite: String)
     {

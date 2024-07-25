@@ -4,5 +4,7 @@
         <item>@string/dialog_delete_positive</item>
         <item>@string/options_item_call</item>
         <item>@string/options_item_web</item>
+        <item>@string/options_item_whatsapp</item>
     </string-array>
+
 </resources>

@@ -11,6 +11,7 @@
     <string name="description_img_photo">Foto Tienda</string>
     <string name="hint_photo_url">url de la imagen</string>
     <string name="edit_store_title_add">Crear Tienda</string>
+    <string name="options_item_whatsapp">Enviar Whatsapp</string>
     <string name="menu_save">Guardar</string>
     <string name="edit_store_message_save_success">Tienda agregada correctamente</string>
     <string name="options_item_call">Llamar</string>
