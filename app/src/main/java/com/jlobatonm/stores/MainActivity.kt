@@ -131,7 +131,9 @@ class MainActivity : AppCompatActivity() , OnClickListener, MainAux
             .show()
         
     }
-    
+    /**
+     * Funcion para mandar un mensaje de WhatsApp
+     */
     private fun sendWhatsApp(phone: String) {
        
         val intent = Intent(Intent.ACTION_VIEW).apply {
