@@ -137,7 +137,6 @@ class MainActivity : AppCompatActivity() , OnClickListener, MainAux
         val intent = Intent(Intent.ACTION_VIEW).apply {
             data = Uri.parse("https://wa.me/$phone")
         }
-     
         
         try {
             startActivity(intent)
